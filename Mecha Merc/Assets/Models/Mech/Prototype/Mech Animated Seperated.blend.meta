@@ -1,0 +1,1390 @@
+fileFormatVersion: 2
+guid: 3c56fedb8e1138d4fbeb7f04b8ed1725
+timeCreated: 1440703193
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arm_Rotator_Cover_Left
+    100002: Arm_Rotator_Cover_Right
+    100004: Armature
+    100006: Back_Plate
+    100008: Back_Vent
+    100010: Body_Bone
+    100012: Body_Rotator
+    100014: Body_Rotator__D_
+    100016: Camera_Unit__D_
+    100018: Communicator__D_
+    100020: Computer_Unit_D_
+    100022: Front_Cover
+    100024: Front_Mech_Cover
+    100026: Front_Mech_Cover_001
+    100028: Human__D_
+    100030: Human_Space_Cover
+    100032: Left_Foot
+    100034: Left_Foot_0
+    100036: Left_Leg_Lower
+    100038: Left_Leg_Lower_Cover
+    100040: Left_Leg_Lower_Rotator
+    100042: Left_Leg_Upper
+    100044: Left_Leg_Upper_Cover
+    100046: Left_Leg_Upper_Rotator_Cover_Inner
+    100048: Left_Leg_Upper_Rotator_Cover_Outer
+    100050: Left_Lower_Arm
+    100052: Left_Lower_Arm_0
+    100054: Left_Lower_Arm_Cover
+    100056: Left_Lower_Arm_Rotator__D_
+    100058: Left_Lower_Arm_Weapon
+    100060: Left_Lower_Arm_Weapon_Cover
+    100062: Left_Lower_Leg
+    100064: Left_Lower_Leg_Rotator__D_
+    100066: Left_Upper_Arm
+    100068: Left_Upper_Arm_0
+    100070: Left_Upper_Arm_Rotator
+    100072: Left_Upper_Arm_Rotator__D_
+    100074: Left_Upper_Leg
+    100076: Left_Upper_Leg_Rotator
+    100078: Left_Upper_Leg_Rotator__D_
+    100080: Left_Upper_Leg_Rotator_Outer
+    100082: Lower_Body
+    100084: Lower_Body_Bone
+    100086: Lower_Body_Cover_Front
+    100088: Lower_Body_Cover_Under
+    100090: Main_Mech_Cover
+    100092: //RootNode
+    100094: Missile_Rack
+    100096: Missile_Rack_Front
+    100098: Missile_Release_Chamber__D_
+    100100: Missile_Storage__D_
+    100102: Monitor__D_
+    100104: Power_Cells__D_
+    100106: Power_Distribution_Unit__D_
+    100108: Right_Arm_Weapon
+    100110: Right_Arm_Weapon_Cover
+    100112: Right_Foot
+    100114: Right_Foot_0
+    100116: Right_Leg_Lower
+    100118: Right_Leg_Lower_Cover
+    100120: Right_Leg_Lower_Rotator
+    100122: Right_Leg_Upper
+    100124: Right_Leg_Upper_Cover
+    100126: Right_Leg_Upper_Rotater_Cover_Inner
+    100128: Right_Leg_Upper_Rotator_Cover_Outer
+    100130: Right_Lower_Arm
+    100132: Right_Lower_Arm_0
+    100134: Right_Lower_Arm_Cover
+    100136: Right_Lower_Arm_Rotator__D_
+    100138: Right_Lower_Leg
+    100140: Right_Lower_Leg_Rotator__D_
+    100142: Right_Upper_Arm
+    100144: Right_Upper_Arm_0
+    100146: Right_Upper_Arm_Rotator
+    100148: Right_Upper_Arm_Rotator__D_
+    100150: Right_Upper_Leg
+    100152: Right_Upper_Leg_Rotator
+    100154: Right_Upper_Leg_Rotator__D_
+    100156: Right_Upper_Leg_Rotator_Outer
+    100158: Rotator_Bone
+    100160: Stabilizing_Unit__D_
+    100162: Targetting_System_Guide_Unit__D_
+    400000: Arm_Rotator_Cover_Left
+    400002: Arm_Rotator_Cover_Right
+    400004: Armature
+    400006: Back_Plate
+    400008: Back_Vent
+    400010: Body_Bone
+    400012: Body_Rotator
+    400014: Body_Rotator__D_
+    400016: Camera_Unit__D_
+    400018: Communicator__D_
+    400020: Computer_Unit_D_
+    400022: Front_Cover
+    400024: Front_Mech_Cover
+    400026: Front_Mech_Cover_001
+    400028: Human__D_
+    400030: Human_Space_Cover
+    400032: Left_Foot
+    400034: Left_Foot_0
+    400036: Left_Leg_Lower
+    400038: Left_Leg_Lower_Cover
+    400040: Left_Leg_Lower_Rotator
+    400042: Left_Leg_Upper
+    400044: Left_Leg_Upper_Cover
+    400046: Left_Leg_Upper_Rotator_Cover_Inner
+    400048: Left_Leg_Upper_Rotator_Cover_Outer
+    400050: Left_Lower_Arm
+    400052: Left_Lower_Arm_0
+    400054: Left_Lower_Arm_Cover
+    400056: Left_Lower_Arm_Rotator__D_
+    400058: Left_Lower_Arm_Weapon
+    400060: Left_Lower_Arm_Weapon_Cover
+    400062: Left_Lower_Leg
+    400064: Left_Lower_Leg_Rotator__D_
+    400066: Left_Upper_Arm
+    400068: Left_Upper_Arm_0
+    400070: Left_Upper_Arm_Rotator
+    400072: Left_Upper_Arm_Rotator__D_
+    400074: Left_Upper_Leg
+    400076: Left_Upper_Leg_Rotator
+    400078: Left_Upper_Leg_Rotator__D_
+    400080: Left_Upper_Leg_Rotator_Outer
+    400082: Lower_Body
+    400084: Lower_Body_Bone
+    400086: Lower_Body_Cover_Front
+    400088: Lower_Body_Cover_Under
+    400090: Main_Mech_Cover
+    400092: //RootNode
+    400094: Missile_Rack
+    400096: Missile_Rack_Front
+    400098: Missile_Release_Chamber__D_
+    400100: Missile_Storage__D_
+    400102: Monitor__D_
+    400104: Power_Cells__D_
+    400106: Power_Distribution_Unit__D_
+    400108: Right_Arm_Weapon
+    400110: Right_Arm_Weapon_Cover
+    400112: Right_Foot
+    400114: Right_Foot_0
+    400116: Right_Leg_Lower
+    400118: Right_Leg_Lower_Cover
+    400120: Right_Leg_Lower_Rotator
+    400122: Right_Leg_Upper
+    400124: Right_Leg_Upper_Cover
+    400126: Right_Leg_Upper_Rotater_Cover_Inner
+    400128: Right_Leg_Upper_Rotator_Cover_Outer
+    400130: Right_Lower_Arm
+    400132: Right_Lower_Arm_0
+    400134: Right_Lower_Arm_Cover
+    400136: Right_Lower_Arm_Rotator__D_
+    400138: Right_Lower_Leg
+    400140: Right_Lower_Leg_Rotator__D_
+    400142: Right_Upper_Arm
+    400144: Right_Upper_Arm_0
+    400146: Right_Upper_Arm_Rotator
+    400148: Right_Upper_Arm_Rotator__D_
+    400150: Right_Upper_Leg
+    400152: Right_Upper_Leg_Rotator
+    400154: Right_Upper_Leg_Rotator__D_
+    400156: Right_Upper_Leg_Rotator_Outer
+    400158: Rotator_Bone
+    400160: Stabilizing_Unit__D_
+    400162: Targetting_System_Guide_Unit__D_
+    2300000: Arm_Rotator_Cover_Left
+    2300002: Arm_Rotator_Cover_Right
+    2300004: Back_Plate
+    2300006: Back_Vent
+    2300008: Body_Rotator
+    2300010: Body_Rotator__D_
+    2300012: Camera_Unit__D_
+    2300014: Communicator__D_
+    2300016: Computer_Unit_D_
+    2300018: Front_Cover
+    2300020: Front_Mech_Cover
+    2300022: Front_Mech_Cover_001
+    2300024: Human__D_
+    2300026: Human_Space_Cover
+    2300028: Left_Foot
+    2300030: Left_Leg_Lower
+    2300032: Left_Leg_Lower_Cover
+    2300034: Left_Leg_Lower_Rotator
+    2300036: Left_Leg_Upper
+    2300038: Left_Leg_Upper_Cover
+    2300040: Left_Leg_Upper_Rotator_Cover_Inner
+    2300042: Left_Leg_Upper_Rotator_Cover_Outer
+    2300044: Left_Lower_Arm
+    2300046: Left_Lower_Arm_Cover
+    2300048: Left_Lower_Arm_Rotator__D_
+    2300050: Left_Lower_Arm_Weapon
+    2300052: Left_Lower_Arm_Weapon_Cover
+    2300054: Left_Lower_Leg_Rotator__D_
+    2300056: Left_Upper_Arm
+    2300058: Left_Upper_Arm_Rotator
+    2300060: Left_Upper_Arm_Rotator__D_
+    2300062: Left_Upper_Leg_Rotator
+    2300064: Left_Upper_Leg_Rotator__D_
+    2300066: Left_Upper_Leg_Rotator_Outer
+    2300068: Lower_Body
+    2300070: Lower_Body_Cover_Front
+    2300072: Lower_Body_Cover_Under
+    2300074: Main_Mech_Cover
+    2300076: Missile_Rack
+    2300078: Missile_Rack_Front
+    2300080: Missile_Release_Chamber__D_
+    2300082: Missile_Storage__D_
+    2300084: Monitor__D_
+    2300086: Power_Cells__D_
+    2300088: Power_Distribution_Unit__D_
+    2300090: Right_Arm_Weapon
+    2300092: Right_Arm_Weapon_Cover
+    2300094: Right_Foot
+    2300096: Right_Leg_Lower
+    2300098: Right_Leg_Lower_Cover
+    2300100: Right_Leg_Lower_Rotator
+    2300102: Right_Leg_Upper
+    2300104: Right_Leg_Upper_Cover
+    2300106: Right_Leg_Upper_Rotater_Cover_Inner
+    2300108: Right_Leg_Upper_Rotator_Cover_Outer
+    2300110: Right_Lower_Arm
+    2300112: Right_Lower_Arm_Cover
+    2300114: Right_Lower_Arm_Rotator__D_
+    2300116: Right_Lower_Leg_Rotator__D_
+    2300118: Right_Upper_Arm
+    2300120: Right_Upper_Arm_Rotator
+    2300122: Right_Upper_Arm_Rotator__D_
+    2300124: Right_Upper_Leg_Rotator
+    2300126: Right_Upper_Leg_Rotator__D_
+    2300128: Right_Upper_Leg_Rotator_Outer
+    2300130: Stabilizing_Unit__D_
+    2300132: Targetting_System_Guide_Unit__D_
+    3300000: Arm_Rotator_Cover_Left
+    3300002: Arm_Rotator_Cover_Right
+    3300004: Back_Plate
+    3300006: Back_Vent
+    3300008: Body_Rotator
+    3300010: Body_Rotator__D_
+    3300012: Camera_Unit__D_
+    3300014: Communicator__D_
+    3300016: Computer_Unit_D_
+    3300018: Front_Cover
+    3300020: Front_Mech_Cover
+    3300022: Front_Mech_Cover_001
+    3300024: Human__D_
+    3300026: Human_Space_Cover
+    3300028: Left_Foot
+    3300030: Left_Leg_Lower
+    3300032: Left_Leg_Lower_Cover
+    3300034: Left_Leg_Lower_Rotator
+    3300036: Left_Leg_Upper
+    3300038: Left_Leg_Upper_Cover
+    3300040: Left_Leg_Upper_Rotator_Cover_Inner
+    3300042: Left_Leg_Upper_Rotator_Cover_Outer
+    3300044: Left_Lower_Arm
+    3300046: Left_Lower_Arm_Cover
+    3300048: Left_Lower_Arm_Rotator__D_
+    3300050: Left_Lower_Arm_Weapon
+    3300052: Left_Lower_Arm_Weapon_Cover
+    3300054: Left_Lower_Leg_Rotator__D_
+    3300056: Left_Upper_Arm
+    3300058: Left_Upper_Arm_Rotator
+    3300060: Left_Upper_Arm_Rotator__D_
+    3300062: Left_Upper_Leg_Rotator
+    3300064: Left_Upper_Leg_Rotator__D_
+    3300066: Left_Upper_Leg_Rotator_Outer
+    3300068: Lower_Body
+    3300070: Lower_Body_Cover_Front
+    3300072: Lower_Body_Cover_Under
+    3300074: Main_Mech_Cover
+    3300076: Missile_Rack
+    3300078: Missile_Rack_Front
+    3300080: Missile_Release_Chamber__D_
+    3300082: Missile_Storage__D_
+    3300084: Monitor__D_
+    3300086: Power_Cells__D_
+    3300088: Power_Distribution_Unit__D_
+    3300090: Right_Arm_Weapon
+    3300092: Right_Arm_Weapon_Cover
+    3300094: Right_Foot
+    3300096: Right_Leg_Lower
+    3300098: Right_Leg_Lower_Cover
+    3300100: Right_Leg_Lower_Rotator
+    3300102: Right_Leg_Upper
+    3300104: Right_Leg_Upper_Cover
+    3300106: Right_Leg_Upper_Rotater_Cover_Inner
+    3300108: Right_Leg_Upper_Rotator_Cover_Outer
+    3300110: Right_Lower_Arm
+    3300112: Right_Lower_Arm_Cover
+    3300114: Right_Lower_Arm_Rotator__D_
+    3300116: Right_Lower_Leg_Rotator__D_
+    3300118: Right_Upper_Arm
+    3300120: Right_Upper_Arm_Rotator
+    3300122: Right_Upper_Arm_Rotator__D_
+    3300124: Right_Upper_Leg_Rotator
+    3300126: Right_Upper_Leg_Rotator__D_
+    3300128: Right_Upper_Leg_Rotator_Outer
+    3300130: Stabilizing_Unit__D_
+    3300132: Targetting_System_Guide_Unit__D_
+    4300000: Body_Rotator
+    4300002: Body_Rotator__D_
+    4300004: Main_Mech_Cover
+    4300006: Monitor__D_
+    4300008: Power_Distribution_Unit__D_
+    4300010: Left_Upper_Arm_Rotator
+    4300012: Right_Lower_Arm_Rotator__D_
+    4300014: Left_Lower_Arm_Rotator__D_
+    4300016: Left_Upper_Arm
+    4300018: Left_Lower_Arm
+    4300020: Left_Lower_Arm_Weapon
+    4300022: Left_Lower_Arm_Weapon_Cover
+    4300024: Left_Lower_Arm_Cover
+    4300026: Left_Upper_Arm_Rotator__D_
+    4300028: Right_Upper_Arm_Rotator
+    4300030: Right_Upper_Arm_Rotator__D_
+    4300032: Right_Upper_Arm
+    4300034: Right_Lower_Arm
+    4300036: Right_Arm_Weapon
+    4300038: Right_Arm_Weapon_Cover
+    4300040: Right_Lower_Arm_Cover
+    4300042: Back_Plate
+    4300044: Power_Cells__D_
+    4300046: Back_Vent
+    4300048: Targetting_System_Guide_Unit__D_
+    4300050: Communicator__D_
+    4300052: Missile_Rack
+    4300054: Missile_Storage__D_
+    4300056: Missile_Release_Chamber__D_
+    4300058: Missile_Rack_Front
+    4300060: Arm_Rotator_Cover_Right
+    4300062: Arm_Rotator_Cover_Left
+    4300064: Front_Mech_Cover
+    4300066: Computer_Unit_D_
+    4300068: Human__D_
+    4300070: Camera_Unit__D_
+    4300072: Human_Space_Cover
+    4300074: Front_Cover
+    4300076: Front_Mech_Cover_001
+    4300078: Lower_Body
+    4300080: Stabilizing_Unit__D_
+    4300082: Right_Upper_Leg_Rotator
+    4300084: Right_Upper_Leg_Rotator__D_
+    4300086: Right_Upper_Leg_Rotator_Outer
+    4300088: Right_Leg_Upper
+    4300090: Right_Leg_Lower_Rotator
+    4300092: Right_Lower_Leg_Rotator__D_
+    4300094: Right_Leg_Lower
+    4300096: Right_Foot
+    4300098: Right_Leg_Lower_Cover
+    4300100: Right_Leg_Upper_Rotator_Cover_Outer
+    4300102: Right_Leg_Upper_Rotater_Cover_Inner
+    4300104: Right_Leg_Upper_Cover
+    4300106: Left_Upper_Leg_Rotator
+    4300108: Left_Upper_Leg_Rotator__D_
+    4300110: Left_Upper_Leg_Rotator_Outer
+    4300112: Left_Leg_Upper
+    4300114: Left_Leg_Upper_Rotator_Cover_Inner
+    4300116: Left_Leg_Upper_Rotator_Cover_Outer
+    4300118: Left_Leg_Upper_Cover
+    4300120: Left_Leg_Lower_Rotator
+    4300122: Left_Lower_Leg_Rotator__D_
+    4300124: Left_Leg_Lower
+    4300126: Left_Foot
+    4300128: Left_Leg_Lower_Cover
+    4300130: Lower_Body_Cover_Under
+    4300132: Lower_Body_Cover_Front
+    7400000: Walk Cycle
+    7400002: ArmatureAction
+    7400004: PoseLib
+    7400006: Start Walk
+    7400008: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk Cycle
+      takeName: Default Take
+      firstFrame: 20
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_Rotator_Cover_Left
+        weight: 1
+      - path: Arm_Rotator_Cover_Right
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Rotator_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0/Left_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0/Right_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg/Left_Foot_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg/Right_Foot_0
+        weight: 1
+      - path: Back_Plate
+        weight: 1
+      - path: Back_Vent
+        weight: 1
+      - path: Body_Rotator
+        weight: 1
+      - path: Body_Rotator__D_
+        weight: 1
+      - path: Camera_Unit__D_
+        weight: 1
+      - path: Communicator__D_
+        weight: 1
+      - path: Computer_Unit_D_
+        weight: 1
+      - path: Front_Cover
+        weight: 1
+      - path: Front_Mech_Cover
+        weight: 1
+      - path: Front_Mech_Cover_001
+        weight: 1
+      - path: Human__D_
+        weight: 1
+      - path: Human_Space_Cover
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Leg_Lower
+        weight: 1
+      - path: Left_Leg_Lower_Cover
+        weight: 1
+      - path: Left_Leg_Lower_Rotator
+        weight: 1
+      - path: Left_Leg_Upper
+        weight: 1
+      - path: Left_Leg_Upper_Cover
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Inner
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Left_Lower_Arm
+        weight: 1
+      - path: Left_Lower_Arm_Cover
+        weight: 1
+      - path: Left_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Lower_Arm_Weapon
+        weight: 1
+      - path: Left_Lower_Arm_Weapon_Cover
+        weight: 1
+      - path: Left_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Arm
+        weight: 1
+      - path: Left_Upper_Arm_Rotator
+        weight: 1
+      - path: Left_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator
+        weight: 1
+      - path: Left_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Lower_Body
+        weight: 1
+      - path: Lower_Body_Cover_Front
+        weight: 1
+      - path: Lower_Body_Cover_Under
+        weight: 1
+      - path: Main_Mech_Cover
+        weight: 1
+      - path: Missile_Rack
+        weight: 1
+      - path: Missile_Rack_Front
+        weight: 1
+      - path: Missile_Release_Chamber__D_
+        weight: 1
+      - path: Missile_Storage__D_
+        weight: 1
+      - path: Monitor__D_
+        weight: 1
+      - path: Power_Cells__D_
+        weight: 1
+      - path: Power_Distribution_Unit__D_
+        weight: 1
+      - path: Right_Arm_Weapon
+        weight: 1
+      - path: Right_Arm_Weapon_Cover
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Leg_Lower
+        weight: 1
+      - path: Right_Leg_Lower_Cover
+        weight: 1
+      - path: Right_Leg_Lower_Rotator
+        weight: 1
+      - path: Right_Leg_Upper
+        weight: 1
+      - path: Right_Leg_Upper_Cover
+        weight: 1
+      - path: Right_Leg_Upper_Rotater_Cover_Inner
+        weight: 1
+      - path: Right_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Right_Lower_Arm
+        weight: 1
+      - path: Right_Lower_Arm_Cover
+        weight: 1
+      - path: Right_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Arm
+        weight: 1
+      - path: Right_Upper_Arm_Rotator
+        weight: 1
+      - path: Right_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator
+        weight: 1
+      - path: Right_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Stabilizing_Unit__D_
+        weight: 1
+      - path: Targetting_System_Guide_Unit__D_
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ArmatureAction
+      takeName: ArmatureAction
+      firstFrame: 0
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_Rotator_Cover_Left
+        weight: 1
+      - path: Arm_Rotator_Cover_Right
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Rotator_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0/Left_Lower_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0/Right_Lower_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg/Left_Foot_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg/Right_Foot_0
+        weight: 1
+      - path: Back_Plate
+        weight: 1
+      - path: Back_Vent
+        weight: 1
+      - path: Body_Rotator
+        weight: 1
+      - path: Body_Rotator__D_
+        weight: 1
+      - path: Camera_Unit__D_
+        weight: 1
+      - path: Communicator__D_
+        weight: 1
+      - path: Computer_Unit_D_
+        weight: 1
+      - path: Front_Cover
+        weight: 1
+      - path: Front_Mech_Cover
+        weight: 1
+      - path: Front_Mech_Cover_001
+        weight: 1
+      - path: Human__D_
+        weight: 1
+      - path: Human_Space_Cover
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Leg_Lower
+        weight: 1
+      - path: Left_Leg_Lower_Cover
+        weight: 1
+      - path: Left_Leg_Lower_Rotator
+        weight: 1
+      - path: Left_Leg_Upper
+        weight: 1
+      - path: Left_Leg_Upper_Cover
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Inner
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Left_Lower_Arm
+        weight: 1
+      - path: Left_Lower_Arm_Cover
+        weight: 1
+      - path: Left_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Lower_Arm_Weapon
+        weight: 1
+      - path: Left_Lower_Arm_Weapon_Cover
+        weight: 1
+      - path: Left_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Arm
+        weight: 1
+      - path: Left_Upper_Arm_Rotator
+        weight: 1
+      - path: Left_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator
+        weight: 1
+      - path: Left_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Lower_Body
+        weight: 1
+      - path: Lower_Body_Cover_Front
+        weight: 1
+      - path: Lower_Body_Cover_Under
+        weight: 1
+      - path: Main_Mech_Cover
+        weight: 1
+      - path: Missile_Rack
+        weight: 1
+      - path: Missile_Rack_Front
+        weight: 1
+      - path: Missile_Release_Chamber__D_
+        weight: 1
+      - path: Missile_Storage__D_
+        weight: 1
+      - path: Monitor__D_
+        weight: 1
+      - path: Power_Cells__D_
+        weight: 1
+      - path: Power_Distribution_Unit__D_
+        weight: 1
+      - path: Right_Arm_Weapon
+        weight: 1
+      - path: Right_Arm_Weapon_Cover
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Leg_Lower
+        weight: 1
+      - path: Right_Leg_Lower_Cover
+        weight: 1
+      - path: Right_Leg_Lower_Rotator
+        weight: 1
+      - path: Right_Leg_Upper
+        weight: 1
+      - path: Right_Leg_Upper_Cover
+        weight: 1
+      - path: Right_Leg_Upper_Rotater_Cover_Inner
+        weight: 1
+      - path: Right_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Right_Lower_Arm
+        weight: 1
+      - path: Right_Lower_Arm_Cover
+        weight: 1
+      - path: Right_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Arm
+        weight: 1
+      - path: Right_Upper_Arm_Rotator
+        weight: 1
+      - path: Right_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator
+        weight: 1
+      - path: Right_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Stabilizing_Unit__D_
+        weight: 1
+      - path: Targetting_System_Guide_Unit__D_
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PoseLib
+      takeName: PoseLib
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_Rotator_Cover_Left
+        weight: 1
+      - path: Arm_Rotator_Cover_Right
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Rotator_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0/Left_Lower_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0/Right_Lower_Arm_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg/Left_Foot_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg/Right_Foot_0
+        weight: 1
+      - path: Back_Plate
+        weight: 1
+      - path: Back_Vent
+        weight: 1
+      - path: Body_Rotator
+        weight: 1
+      - path: Body_Rotator__D_
+        weight: 1
+      - path: Camera_Unit__D_
+        weight: 1
+      - path: Communicator__D_
+        weight: 1
+      - path: Computer_Unit_D_
+        weight: 1
+      - path: Front_Cover
+        weight: 1
+      - path: Front_Mech_Cover
+        weight: 1
+      - path: Front_Mech_Cover_001
+        weight: 1
+      - path: Human__D_
+        weight: 1
+      - path: Human_Space_Cover
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Leg_Lower
+        weight: 1
+      - path: Left_Leg_Lower_Cover
+        weight: 1
+      - path: Left_Leg_Lower_Rotator
+        weight: 1
+      - path: Left_Leg_Upper
+        weight: 1
+      - path: Left_Leg_Upper_Cover
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Inner
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Left_Lower_Arm
+        weight: 1
+      - path: Left_Lower_Arm_Cover
+        weight: 1
+      - path: Left_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Lower_Arm_Weapon
+        weight: 1
+      - path: Left_Lower_Arm_Weapon_Cover
+        weight: 1
+      - path: Left_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Arm
+        weight: 1
+      - path: Left_Upper_Arm_Rotator
+        weight: 1
+      - path: Left_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator
+        weight: 1
+      - path: Left_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Lower_Body
+        weight: 1
+      - path: Lower_Body_Cover_Front
+        weight: 1
+      - path: Lower_Body_Cover_Under
+        weight: 1
+      - path: Main_Mech_Cover
+        weight: 1
+      - path: Missile_Rack
+        weight: 1
+      - path: Missile_Rack_Front
+        weight: 1
+      - path: Missile_Release_Chamber__D_
+        weight: 1
+      - path: Missile_Storage__D_
+        weight: 1
+      - path: Monitor__D_
+        weight: 1
+      - path: Power_Cells__D_
+        weight: 1
+      - path: Power_Distribution_Unit__D_
+        weight: 1
+      - path: Right_Arm_Weapon
+        weight: 1
+      - path: Right_Arm_Weapon_Cover
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Leg_Lower
+        weight: 1
+      - path: Right_Leg_Lower_Cover
+        weight: 1
+      - path: Right_Leg_Lower_Rotator
+        weight: 1
+      - path: Right_Leg_Upper
+        weight: 1
+      - path: Right_Leg_Upper_Cover
+        weight: 1
+      - path: Right_Leg_Upper_Rotater_Cover_Inner
+        weight: 1
+      - path: Right_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Right_Lower_Arm
+        weight: 1
+      - path: Right_Lower_Arm_Cover
+        weight: 1
+      - path: Right_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Arm
+        weight: 1
+      - path: Right_Upper_Arm_Rotator
+        weight: 1
+      - path: Right_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator
+        weight: 1
+      - path: Right_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Stabilizing_Unit__D_
+        weight: 1
+      - path: Targetting_System_Guide_Unit__D_
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Start Walk
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_Rotator_Cover_Left
+        weight: 1
+      - path: Arm_Rotator_Cover_Right
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Rotator_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0/Left_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0/Right_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg/Left_Foot_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg/Right_Foot_0
+        weight: 1
+      - path: Back_Plate
+        weight: 1
+      - path: Back_Vent
+        weight: 1
+      - path: Body_Rotator
+        weight: 1
+      - path: Body_Rotator__D_
+        weight: 1
+      - path: Camera_Unit__D_
+        weight: 1
+      - path: Communicator__D_
+        weight: 1
+      - path: Computer_Unit_D_
+        weight: 1
+      - path: Front_Cover
+        weight: 1
+      - path: Front_Mech_Cover
+        weight: 1
+      - path: Front_Mech_Cover_001
+        weight: 1
+      - path: Human__D_
+        weight: 1
+      - path: Human_Space_Cover
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Leg_Lower
+        weight: 1
+      - path: Left_Leg_Lower_Cover
+        weight: 1
+      - path: Left_Leg_Lower_Rotator
+        weight: 1
+      - path: Left_Leg_Upper
+        weight: 1
+      - path: Left_Leg_Upper_Cover
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Inner
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Left_Lower_Arm
+        weight: 1
+      - path: Left_Lower_Arm_Cover
+        weight: 1
+      - path: Left_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Lower_Arm_Weapon
+        weight: 1
+      - path: Left_Lower_Arm_Weapon_Cover
+        weight: 1
+      - path: Left_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Arm
+        weight: 1
+      - path: Left_Upper_Arm_Rotator
+        weight: 1
+      - path: Left_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator
+        weight: 1
+      - path: Left_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Lower_Body
+        weight: 1
+      - path: Lower_Body_Cover_Front
+        weight: 1
+      - path: Lower_Body_Cover_Under
+        weight: 1
+      - path: Main_Mech_Cover
+        weight: 1
+      - path: Missile_Rack
+        weight: 1
+      - path: Missile_Rack_Front
+        weight: 1
+      - path: Missile_Release_Chamber__D_
+        weight: 1
+      - path: Missile_Storage__D_
+        weight: 1
+      - path: Monitor__D_
+        weight: 1
+      - path: Power_Cells__D_
+        weight: 1
+      - path: Power_Distribution_Unit__D_
+        weight: 1
+      - path: Right_Arm_Weapon
+        weight: 1
+      - path: Right_Arm_Weapon_Cover
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Leg_Lower
+        weight: 1
+      - path: Right_Leg_Lower_Cover
+        weight: 1
+      - path: Right_Leg_Lower_Rotator
+        weight: 1
+      - path: Right_Leg_Upper
+        weight: 1
+      - path: Right_Leg_Upper_Cover
+        weight: 1
+      - path: Right_Leg_Upper_Rotater_Cover_Inner
+        weight: 1
+      - path: Right_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Right_Lower_Arm
+        weight: 1
+      - path: Right_Lower_Arm_Cover
+        weight: 1
+      - path: Right_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Arm
+        weight: 1
+      - path: Right_Upper_Arm_Rotator
+        weight: 1
+      - path: Right_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator
+        weight: 1
+      - path: Right_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Stabilizing_Unit__D_
+        weight: 1
+      - path: Targetting_System_Guide_Unit__D_
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arm_Rotator_Cover_Left
+        weight: 1
+      - path: Arm_Rotator_Cover_Right
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Rotator_Bone
+        weight: 1
+      - path: Armature/Rotator_Bone/Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Left_Upper_Arm_0/Left_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Body_Bone/Right_Upper_Arm_0/Right_Lower_Arm_0
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone
+        weight: 0
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Left_Upper_Leg/Left_Lower_Leg/Left_Foot_0
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg
+        weight: 1
+      - path: Armature/Rotator_Bone/Lower_Body_Bone/Right_Upper_Leg/Right_Lower_Leg/Right_Foot_0
+        weight: 1
+      - path: Back_Plate
+        weight: 1
+      - path: Back_Vent
+        weight: 1
+      - path: Body_Rotator
+        weight: 1
+      - path: Body_Rotator__D_
+        weight: 1
+      - path: Camera_Unit__D_
+        weight: 1
+      - path: Communicator__D_
+        weight: 1
+      - path: Computer_Unit_D_
+        weight: 1
+      - path: Front_Cover
+        weight: 1
+      - path: Front_Mech_Cover
+        weight: 1
+      - path: Front_Mech_Cover_001
+        weight: 1
+      - path: Human__D_
+        weight: 1
+      - path: Human_Space_Cover
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Leg_Lower
+        weight: 1
+      - path: Left_Leg_Lower_Cover
+        weight: 1
+      - path: Left_Leg_Lower_Rotator
+        weight: 1
+      - path: Left_Leg_Upper
+        weight: 1
+      - path: Left_Leg_Upper_Cover
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Inner
+        weight: 1
+      - path: Left_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Left_Lower_Arm
+        weight: 1
+      - path: Left_Lower_Arm_Cover
+        weight: 1
+      - path: Left_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Lower_Arm_Weapon
+        weight: 1
+      - path: Left_Lower_Arm_Weapon_Cover
+        weight: 1
+      - path: Left_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Arm
+        weight: 1
+      - path: Left_Upper_Arm_Rotator
+        weight: 1
+      - path: Left_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator
+        weight: 1
+      - path: Left_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Left_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Lower_Body
+        weight: 1
+      - path: Lower_Body_Cover_Front
+        weight: 1
+      - path: Lower_Body_Cover_Under
+        weight: 1
+      - path: Main_Mech_Cover
+        weight: 1
+      - path: Missile_Rack
+        weight: 1
+      - path: Missile_Rack_Front
+        weight: 1
+      - path: Missile_Release_Chamber__D_
+        weight: 1
+      - path: Missile_Storage__D_
+        weight: 1
+      - path: Monitor__D_
+        weight: 1
+      - path: Power_Cells__D_
+        weight: 1
+      - path: Power_Distribution_Unit__D_
+        weight: 1
+      - path: Right_Arm_Weapon
+        weight: 1
+      - path: Right_Arm_Weapon_Cover
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Leg_Lower
+        weight: 1
+      - path: Right_Leg_Lower_Cover
+        weight: 1
+      - path: Right_Leg_Lower_Rotator
+        weight: 1
+      - path: Right_Leg_Upper
+        weight: 1
+      - path: Right_Leg_Upper_Cover
+        weight: 1
+      - path: Right_Leg_Upper_Rotater_Cover_Inner
+        weight: 1
+      - path: Right_Leg_Upper_Rotator_Cover_Outer
+        weight: 1
+      - path: Right_Lower_Arm
+        weight: 1
+      - path: Right_Lower_Arm_Cover
+        weight: 1
+      - path: Right_Lower_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Lower_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Arm
+        weight: 1
+      - path: Right_Upper_Arm_Rotator
+        weight: 1
+      - path: Right_Upper_Arm_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator
+        weight: 1
+      - path: Right_Upper_Leg_Rotator__D_
+        weight: 1
+      - path: Right_Upper_Leg_Rotator_Outer
+        weight: 1
+      - path: Stabilizing_Unit__D_
+        weight: 1
+      - path: Targetting_System_Guide_Unit__D_
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
