@@ -28,26 +28,23 @@ public class Mech_Controls : MonoBehaviour
 	private float currentReverseSpeed = 0f;
 
 	[Header("Rotation Settings")]
-	public bool isCameraAhead = true;
 	public bool isLowerBodyRotationEnabled = true;
-	public float lowerBodyRotationSpeed;
 	public bool isUpperBodyRotationEnabled = true;
-	public float upperBodyRotationSensitivity;
-	public float upperBodyRotationMaxSpeed;
 	public bool isCameraVerticalRotationEnabled = true;
-	public float verticalCameraRotationSensitivity;
-	public float cameraVerticalMaxSpeed;
-	public float cameraHorizontalMaxSpeed;
-	public float maxVerticalAngle;
-	public float minVerticalAngle;
-	private bool isLowerBodyRotating = false;
+	public float lowerBodyRotationMaxSpeed;
+	public float upperBodyRotationMaxSpeed;
+	public float weaponVerticalMaxSpeed;
+	public float weaponVerticalMaxAngle;
+	public float weaponVerticalMinAngle;
 	public bool canLeftUpperArmRotate = true;
 	public bool canRightUpperArmRotate = true;
+	private bool isLowerBodyRotating = false;
+	public float mouseSensitivity = 0.5f;
 
 
 	[Header("Camera Free Look")]
 	public bool isFreeLookEnabled = true;
-	public float freeLookSpeed;
+	public float freeLookSensitivity = 0.5f;
 	public float maxVerticalFreeLookAngle;
 	public float minVerticalFreeLookAngle;
 	public float maxHorizontalFreeLookAngle;
@@ -233,11 +230,11 @@ public class Mech_Controls : MonoBehaviour
 		{
 			if(Input.GetAxis("Vertical") < 0)
 			{
-				lowerSpin -= Input.GetAxis ("Horizontal") * Time.deltaTime * lowerBodyRotationSpeed;
+				lowerSpin -= Input.GetAxis ("Horizontal") * Time.deltaTime * lowerBodyRotationMaxSpeed;
 			}
 			else
 			{
-				lowerSpin += Input.GetAxis ("Horizontal") * Time.deltaTime * lowerBodyRotationSpeed;
+				lowerSpin += Input.GetAxis ("Horizontal") * Time.deltaTime * lowerBodyRotationMaxSpeed;
 			}
 			
 			if(Input.GetButton("Horizontal"))
@@ -258,9 +255,11 @@ public class Mech_Controls : MonoBehaviour
 		{
 			if(!isFreeLooking)
 			{
-				float rotSpeed = Input.GetAxisRaw ("MouseX") * upperBodyRotationSensitivity;
+				float rotSpeed = Input.GetAxisRaw ("MouseX") * mouseSensitivity;
 
-				rotSpeed = Mathf.Clamp(rotSpeed,-upperBodyRotationMaxSpeed,upperBodyRotationMaxSpeed);
+				float rotSpeedBoundary = upperBodyRotationMaxSpeed * Time.deltaTime;
+
+				rotSpeed = Mathf.Clamp(rotSpeed,-rotSpeedBoundary,rotSpeedBoundary);
 
 				upperSpin += rotSpeed;
 
@@ -268,11 +267,13 @@ public class Mech_Controls : MonoBehaviour
 				mechMainCamHorizontal.transform.eulerAngles = new Vector3(mechMainCamHorizontal.transform.eulerAngles.x,
 				                                                          upperSpin - 270,mechMainCamHorizontal.transform.eulerAngles.z);
 
-				//Smooth out the upper body movement ( seems as body follows camera smoothly )
-				smoothSpin = Coserp(smoothSpin,upperSpin,0.3f);
+				//Smooth out the upper body movement (body follows camera smoothly)
+				smoothSpin = Lerp(smoothSpin,upperSpin,8 * Time.deltaTime);
+
+				//Debug.Log(Input.GetAxisRaw("MouseX") * 0.5f);
 
 				//Rotate the upper body based on mouse input
-				upperBody.transform.eulerAngles = new Vector3(upperBody.transform.eulerAngles.x, smoothSpin, upperBody.transform.eulerAngles.z);
+				upperBody.transform.eulerAngles = new Vector3(upperBody.transform.eulerAngles.x, smoothSpin , upperBody.transform.eulerAngles.z);
 			}
 		}
 		else if(!isFreeLooking)
@@ -289,14 +290,16 @@ public class Mech_Controls : MonoBehaviour
 		{
 			if(!isFreeLooking)
 			{
-				float rotSpeed = Input.GetAxisRaw ("MouseY") * verticalCameraRotationSensitivity;
+				float rotSpeed = Input.GetAxisRaw ("MouseY") * mouseSensitivity;
 
-				rotSpeed = Mathf.Clamp(rotSpeed,-cameraVerticalMaxSpeed,cameraVerticalMaxSpeed);
+				float rotSpeedBoundary = weaponVerticalMaxSpeed * Time.deltaTime;
+
+				rotSpeed = Mathf.Clamp(rotSpeed,-rotSpeedBoundary,rotSpeedBoundary);
 
 				cameraVerticalSpin -= rotSpeed;
 
 				//Clamp vertical Rotation
-				cameraVerticalSpin = Mathf.Clamp(cameraVerticalSpin,-maxVerticalAngle,minVerticalAngle);
+				cameraVerticalSpin = Mathf.Clamp(cameraVerticalSpin,-weaponVerticalMaxAngle,weaponVerticalMinAngle);
 
 				//Rotate the main camera based on mouse input ( on the x axis ), also keep body rotation on the y axis
 				mechMainCamVertical.transform.eulerAngles = new Vector3(cameraVerticalSpin,mechMainCamHorizontal.transform.eulerAngles.y,0);
@@ -329,8 +332,8 @@ public class Mech_Controls : MonoBehaviour
 			{
 				isFreeLooking = true;
 
-				freeLookVerticalSpin -= Input.GetAxisRaw("MouseY") * freeLookSpeed;
-				freeLookHorizontalSpin += Input.GetAxisRaw("MouseX") * freeLookSpeed;
+				freeLookVerticalSpin -= Input.GetAxisRaw("MouseY") * freeLookSensitivity;;
+				freeLookHorizontalSpin += Input.GetAxisRaw("MouseX") * freeLookSensitivity;;
 
 				//Clamp rotations for free look
 				freeLookHorizontalSpin = Mathf.Clamp(freeLookHorizontalSpin,-maxHorizontalFreeLookAngle,maxHorizontalFreeLookAngle);

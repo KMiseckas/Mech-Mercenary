@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement\Mech_Controls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapons\Bullet.cs">
     <Files>
-      <File FileName="Assets\Scripts\Movement\Mech_Controls.cs" Line="299" Column="78" />
-      <File FileName="Assets\Scripts\Utilities\HideMouse.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Utilities\FPSDebug.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Weapons\Bullet.cs" Line="55" Column="24" />
+      <File FileName="Assets\Scripts\Weapons\WeaponManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Movement\Mech_Controls.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Armor\ArmorPlate.cs" Line="14" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
