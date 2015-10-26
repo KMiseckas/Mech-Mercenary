@@ -47,6 +47,11 @@ public class HUDFPS : MonoBehaviour
 			float fps = accum/frames;
 			sFPS = fps.ToString( "f" + Mathf.Clamp( nbDecimal, 0, 10 ) );
 			
+            if(fps <= 5)
+            {
+                UnityEditor.EditorApplication.isPlaying = false;
+            }
+
 			//Update the color
 			color = (fps >= 30) ? Color.green : ((fps > 10) ? Color.red : Color.yellow);
 			

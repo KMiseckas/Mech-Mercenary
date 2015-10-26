@@ -52,6 +52,8 @@
      <Compile Include="Assets\Scripts\CameraShake\RandomShake.cs" />
      <Compile Include="Assets\Scripts\CameraShake\Util_Easing.cs" />
      <Compile Include="Assets\Scripts\CameraShake\Util_Noise.cs" />
+     <Compile Include="Assets\Scripts\Manager\MechDestroyed.cs" />
+     <Compile Include="Assets\Scripts\Mech Components\MechComponentManager.cs" />
      <Compile Include="Assets\Scripts\Movement\Mech_Controls.cs" />
      <Compile Include="Assets\Scripts\Utilities\FPSDebug.cs" />
      <Compile Include="Assets\Scripts\Utilities\HUDFPS.cs" />

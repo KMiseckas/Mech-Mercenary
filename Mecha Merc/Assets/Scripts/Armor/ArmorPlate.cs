@@ -29,10 +29,10 @@ public class ArmorPlate : MonoBehaviour
 		currentPlateThickness = plateThickness;
 
 		//Calculate how much loss in durability reduces armor thickness ratio
-		durabilityToArmorRatio = (maxDurability - minDurability) / (maxPlateThickness - minPlateThickness);
+		durabilityToArmorRatio = (plateThickness - minPlateThickness) / (maxDurability - minDurability);
 	}
 
-	void DamageDurability(float damage)
+	public void DamageDurability(float damage)
 	{
 		if(currentDurability > minDurability)
 		{
@@ -45,6 +45,7 @@ public class ArmorPlate : MonoBehaviour
 	void CalculateNewPlateThickness()
 	{
 		currentPlateThickness = plateThickness - ((maxDurability - currentDurability) * durabilityToArmorRatio);
+		Debug.Log (currentPlateThickness);
 	}
 
 }

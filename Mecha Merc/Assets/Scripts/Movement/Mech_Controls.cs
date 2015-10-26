@@ -3,8 +3,7 @@ using System.Collections;
 
 public class Mech_Controls : MonoBehaviour 
 {
-	[Header("Controls Enabled ?")]
-	public bool isControllingEnabled = true;
+	private bool isControllingEnabled = true;
 
 	[Header("Cameras")]
 	public Transform mechMainCamHorizontal;
@@ -13,7 +12,6 @@ public class Mech_Controls : MonoBehaviour
 	 
 	[Header("Movement Settings")]
 	public Transform movementDirector;
-	public bool isMovementEnabled = true;
 	public bool isAccelerationUsed = true;
 	public float topSpeed;
 	public float topReverseSpeed;
@@ -21,6 +19,9 @@ public class Mech_Controls : MonoBehaviour
 	public float reverseWalkSpeed;
 	public float maxForwardSpeedWhileRotating;
 	public float maxReverseSpeedWhileRotating;
+
+	private bool isMovementEnabled = true;
+
 	private float currentSpeed = 0f;
 	private float acceleration = 2;
 	private float constantSpeedModifier = 0.28f;
@@ -28,26 +29,27 @@ public class Mech_Controls : MonoBehaviour
 	private float currentReverseSpeed = 0f;
 
 	[Header("Rotation Settings")]
-	public bool isLowerBodyRotationEnabled = true;
-	public bool isUpperBodyRotationEnabled = true;
-	public bool isCameraVerticalRotationEnabled = true;
 	public float lowerBodyRotationMaxSpeed;
 	public float upperBodyRotationMaxSpeed;
 	public float weaponVerticalMaxSpeed;
 	public float weaponVerticalMaxAngle;
 	public float weaponVerticalMinAngle;
-	public bool canLeftUpperArmRotate = true;
-	public bool canRightUpperArmRotate = true;
-	private bool isLowerBodyRotating = false;
 	public float mouseSensitivity = 0.5f;
 
-
+	private bool isLowerBodyRotationEnabled = true;
+	private bool isUpperBodyRotationEnabled = true;
+	private bool isCameraVerticalRotationEnabled = true;
+	private bool canLeftUpperArmRotate = true;
+	private bool canRightUpperArmRotate = true;
+	private bool isLowerBodyRotating = false;
+	
 	[Header("Camera Free Look")]
 	public bool isFreeLookEnabled = true;
 	public float freeLookSensitivity = 0.5f;
 	public float maxVerticalFreeLookAngle;
 	public float minVerticalFreeLookAngle;
 	public float maxHorizontalFreeLookAngle;
+
 	private bool isFreeLooking = false;
 	
 	[Header("Rotation Bones")]
@@ -83,17 +85,64 @@ public class Mech_Controls : MonoBehaviour
 	private Vector3 moveDirection;
 
 	private CharacterController cController;
-	private Animator mechAnimator;
+	//private Animator mechAnimator;
 
 
 	[Header("Testing / Debugging")]
 	[SerializeField] private float averageMouseSpeed = 0;
 	public float speedDebug;
 
-	void Start () 
+
+
+
+    #region Properties ------
+    public bool IsControllingEnabled
+    {
+        get{ return isControllingEnabled;}
+        set{ isControllingEnabled = value;}
+    }
+
+    public bool IsLowerBodyRotationEnabled
+    {
+        get{return isLowerBodyRotationEnabled;}
+        set {isLowerBodyRotationEnabled = value;}
+    }
+
+    public bool IsUpperBodyRotationEnabled
+    {
+        get{return isUpperBodyRotationEnabled;}
+        set {isUpperBodyRotationEnabled = value;}
+    }
+
+    public bool IsCameraVerticalRotationEnabled
+    {
+        get{return isCameraVerticalRotationEnabled;}
+        set{isCameraVerticalRotationEnabled = value;}
+    }
+
+    public bool CanLeftUpperArmRotate
+    {
+        get{ return canLeftUpperArmRotate;}
+        set{canLeftUpperArmRotate = value;}
+    }
+
+    public bool CanRightUpperArmRotate
+    {
+        get{ return canRightUpperArmRotate;}
+        set{canRightUpperArmRotate = value;}
+    }
+
+    public bool IsLowerBodyRotating
+    {
+        get{ return isLowerBodyRotating;}
+        set{isLowerBodyRotating = value;}
+    }
+    #endregion
+
+    void Start () 
 	{
 		cController = GetComponent<CharacterController> ();
-		mechAnimator = gameObject.transform.FindChild ("Mech").GetComponent<Animator> ();
+		//mechAnimator = gameObject.transform.FindChild ("Mech").GetComponent<Animator> ();
 
 		defaultArmRot = upperLeftArm.transform.eulerAngles;
 
@@ -101,7 +150,7 @@ public class Mech_Controls : MonoBehaviour
 
 	void Update () 
 	{
-		if(isControllingEnabled)
+		if(IsControllingEnabled)
 		{
 			CheckInput();
 			CheckLowerBodyRotation ();
@@ -180,7 +229,7 @@ public class Mech_Controls : MonoBehaviour
 					currentSpeed = currentForwardSpeed;
 				}
 
-				mechAnimator.SetBool("isWalking",true);
+				//mechAnimator.SetBool("isWalking",true);
 
 			}
 			else if(Input.GetAxis("Vertical") < 0)
@@ -209,10 +258,10 @@ public class Mech_Controls : MonoBehaviour
 			if(!Input.GetButton("Vertical"))
 			{
 				currentSpeed = 0;
-				mechAnimator.SetBool("isWalking",false);
+				//mechAnimator.SetBool("isWalking",false);
 			}
 
-			mechAnimator.SetFloat("animation speed",currentSpeed * 0.07f);
+			//mechAnimator.SetFloat("animation speed",currentSpeed * 0.07f);
 
 			//Debug.Log(mechAnimator.GetFloat("animation speed"));
 			//Debug.Log ("CurrentSpeed: " + currentSpeed + "  " + (moveDirection.z * currentSpeed));
@@ -239,6 +288,7 @@ public class Mech_Controls : MonoBehaviour
 			
 			if(Input.GetButton("Horizontal"))
 			{
+                Debug.Log (lowerSpin);
 				lowerBody.transform.eulerAngles = new Vector3(transform.eulerAngles.x, lowerSpin, lowerBody.transform.eulerAngles.z);
 				isLowerBodyRotating = true;
 			}
@@ -304,16 +354,19 @@ public class Mech_Controls : MonoBehaviour
 				//Rotate the main camera based on mouse input ( on the x axis ), also keep body rotation on the y axis
 				mechMainCamVertical.transform.eulerAngles = new Vector3(cameraVerticalSpin,mechMainCamHorizontal.transform.eulerAngles.y,0);
 
-				float targetRotation = Coserp(upperLeftArm.transform.eulerAngles.z,-cameraVerticalSpin + defaultArmRot.z,0.3f);
+
+				//Rotate arms
+				float targetRotationLeft = Coserp(upperLeftArm.transform.eulerAngles.z,-cameraVerticalSpin + defaultArmRot.z,0.3f);
+				float targetRotationRight = Coserp(upperRightArm.transform.eulerAngles.z,-cameraVerticalSpin + defaultArmRot.z,0.3f);
 
 				if(canLeftUpperArmRotate)
 				{
-					upperLeftArm.transform.eulerAngles = new Vector3(upperLeftArm.transform.eulerAngles.x,upperLeftArm.transform.eulerAngles.y,targetRotation);
+					upperLeftArm.transform.eulerAngles = new Vector3(upperLeftArm.transform.eulerAngles.x,upperLeftArm.transform.eulerAngles.y,targetRotationLeft);
 				}
 
 				if(canRightUpperArmRotate)
 				{
-					upperRightArm.transform.eulerAngles = new Vector3(upperRightArm.transform.eulerAngles.x,upperRightArm.transform.eulerAngles.y,targetRotation);
+					upperRightArm.transform.eulerAngles = new Vector3(upperRightArm.transform.eulerAngles.x,upperRightArm.transform.eulerAngles.y,targetRotationRight);
 				}
 			}
 		}
