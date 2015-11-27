@@ -38,7 +38,7 @@ public class speedMeasurement : MonoBehaviour
 
 			if(timeTaken >= 2)
 			{
-				mechC.IsControllingEnabled = false;
+				mechC.IsMechControllingEnabled = false;
 
 				isFinished = true;
 
