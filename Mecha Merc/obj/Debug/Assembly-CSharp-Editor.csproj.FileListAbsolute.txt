@@ -40,3 +40,4 @@ E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\Temp\bin\Debug\Unit
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-CSharp-Editor.csprojResolveAssemblyReference.cache
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-CSharp-Editor.dll
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-CSharp-Editor.pdb
+E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll

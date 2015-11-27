@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Bleed\BleedBehavior.cs" />
      <Compile Include="Assets\Scripts\Mech Managing\Armor\ArmorPlate.cs" />
      <Compile Include="Assets\Scripts\Mech Managing\Camera\CameraShake\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Mech Managing\Camera\CameraShake\Util_Easing.cs" />
@@ -76,6 +77,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Bleed\HowToUse.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
@@ -96,10 +98,12 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\ShaderLearning\Shader_1.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Bleed\ImageBlendEffect.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
@@ -141,6 +145,9 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>E:/Documents/GitHub - Unity/Mecha-Merc-Repository/Mecha Merc/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files/Unity_5.2.0f3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

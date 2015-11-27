@@ -21,3 +21,4 @@ E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-CSharp.pdb
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+E:\Documents\GitHub - Unity\Mecha-Merc-Repository\Mecha Merc\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
